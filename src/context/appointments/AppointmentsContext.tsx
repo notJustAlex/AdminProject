@@ -1,4 +1,4 @@
-import React, { createContext, useReducer } from 'react';
+import React, { createContext, useReducer } from "react";
 import { Value } from "react-calendar/dist/cjs/shared/types";
 import reducer, { IAppointmentState } from "./reducer";
 
@@ -10,7 +10,7 @@ const initialState: IAppointmentState = {
 	allAppointments: [],
 	activeAppointments: [],
 	appointmentLoadingStatus: "idle",
-	calendarDate: [new Date(), new Date()],
+	calendarDate: null,
 };
 
 interface ProviderProps {

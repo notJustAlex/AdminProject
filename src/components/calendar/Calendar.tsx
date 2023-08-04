@@ -10,7 +10,7 @@ function Calendar() {
 	const { calendarDate, setDateAndFilter } = useContext(AppointmentContext);
 
 	useEffect(() => {
-		setDateAndFilter([null, null]);
+		setDateAndFilter(null);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
@@ -29,7 +29,7 @@ function Calendar() {
 						? false
 						: true
 				}
-				onClick={() => setDateAndFilter([null, null])}
+				onClick={() => setDateAndFilter(null)}
 				className="calendar__reset"
 			>
 				Reset filters
